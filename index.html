@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaNova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="logo">
+      <img src="https://img.icons8.com/color/48/water.png" alt="Logo">
+      <h1>AQUANOVA</h1>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+  <nav class="menu" id="sideMenu">
+    <h3>📋 Opciones:</h3>
+    <ul>
+      <li>🔍 Ver datos en tiempo real</li>
+      <li>📝 Ver historial de mediciones</li>
+      <li>⚠️ Alertas y umbrales</li>
+      <li>📍 Estaciones disponibles</li>
+      <li>📂 Exportar datos</li>
+      <li>⚙️ Configuración</li>
+      <li>🧑‍💻 Soporte técnico</li>
+      <li>📕 Cerrar sesión</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Proyecto</h2>
+      <p>Dispositivo Inteligente para Monitoreo en Acuicultura</p>
+      <h2>Gráficas</h2>
+      <div class="graph">
+        <img src="img/gr4afico.PNG" alt="Gráfico">
+      </div>
+      <div class="data-section">
+        <p>Temperatura: Actual 39° / Esperado 22°</p>
+        <p>Oxígeno disuelto:</p>
+        <p>pH:</p>
+        <p>Turbidez:</p>
+        <p>Salinidad:</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Copyright AquaNova.ar
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sideMenu');
+      const overlay = document.getElementById('overlay');
+      menu.classList.toggle('open');
+      overlay.classList.toggle('show');
+    }
+  </script>
+</body>

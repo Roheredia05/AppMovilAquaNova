@@ -1,0 +1,122 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #d6ecfd;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .menu-toggle {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0 auto;
+    }
+    .logo img {
+      height: 30px;
+    }
+    .logo h1 {
+      font-size: 1.5rem;
+      color: #1a567b;
+    }
+    .container {
+      padding: 1rem;
+      flex: 1;
+    }
+    .card {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #2b2b2b;
+    }
+    .graph {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      height: 300px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .graph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .data-section p {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #b0dafd;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    nav.menu {
+      background-color: #d6ecfd;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 75%;
+      height: 100%;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+    nav.menu.open {
+      left: 0;
+    }
+    nav.menu h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    nav.menu ul {
+      list-style: none;
+    }
+    nav.menu ul li {
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    .overlay.show {
+      display: block;
+    }
